@@ -14,7 +14,9 @@ export const Toggle = () => {
   // const giveAnyName = useSidebar((state) => state.onCollapse)
 
   // method - 2
-  const { collapsed, onExpand, onCollapse } = useSidebar();
+  // const { collapsed, onExpand, onCollapse } = useSidebar();
+
+  const { collapsed, onExpand, onCollapse } = useSidebar((state) => state);
 
   const label = collapsed ? "Expand" : "Collapse";
 
